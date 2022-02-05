@@ -1,0 +1,192 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+@import url("./Filter.css");
+@import url("./airExp.css");
+:root {
+  --header-background: #000;
+  --header-color: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--header-color);
+}
+#_headerSection {
+  width: 100%;
+  height: 70px;
+  background-color: var(--header-background);
+  z-index: 1;
+}
+#_headerSection > article {
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  color: var(--header-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoBlock {
+  flex-basis: 20%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.menuBlock {
+  flex-basis: 55%;
+  display: flex;
+  justify-content: center;
+}
+.hiddenBlock {
+  background: #fff;
+  width: 280px;
+  height: 50px;
+  border-radius: 50px;
+  color: #111;
+  display: none;
+  align-items: center;
+  padding: 0 15px;
+  /* justify-content: center; */
+  border: 1px solid #ccc;
+  position: relative;
+}
+.hiddenBlock span:first-child {
+  font-size: 13px;
+  font-weight: bold;
+}
+.hiddenBlock span:last-child {
+  display: flex;
+  justify-content: flex-end;
+  background: #ff385c;
+  border-radius: 50px;
+  padding: 8px 10px;
+  color: var(--header-color);
+  position: absolute;
+  right: 10px;
+}
+.authBlock {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+.menuList {
+  display: flex;
+  align-items: center;
+}
+.menuList li {
+  list-style: none;
+  padding: 10px 19px;
+}
+.menuList li a {
+  color: var(--header-color);
+  text-decoration: none;
+}
+.userBlock {
+  background-color: var(--header-color);
+  border-radius: 20px;
+  height: 45px;
+  width: 86px;
+  align-items: center;
+}
+.userBlock i {
+  color: var(--header-background);
+  font-size: 15px;
+  margin: 1px;
+}
+
+.userBlock i:nth-child(2) {
+  font-size: 25px;
+  color: gray;
+}
+.dropDown {
+  background: white;
+  width: 16%;
+  position: absolute;
+  right: 40px;
+  top: 65px;
+  border-radius: 10px;
+  display: none;
+  padding: 10px;
+  z-index: 10;
+}
+
+.dropDown ul li {
+  list-style: none;
+  padding: 8px 20px;
+}
+.dropDown ul li a {
+  text-decoration: none;
+  color: var(--header-background);
+}
+.dropDown ul li:hover {
+  background-color: #efefef;
+}
+.dropDown ul li:nth-child(2) {
+  border-bottom: 1px solid #efefef;
+  margin-bottom: 5px;
+}
+
+.active {
+  background-color: #fff;
+}
+
+/* modal(login pop-up) starts */
+#signupBlock {
+  background: transparent;
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  display: none;
+}
+#signupBlock article {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: var(--header-color);
+}
+#signupBlock article > div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  height: 60vh;
+  box-shadow: 1px 1px 2px 0px #ccc;
+}
+#signupBlock article > div h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #ff385c;
+}
+
+#signupBlock article > div input {
+  width: 100%;
+  padding: 20px;
+  margin: 5px;
+}
+#signupBlock article span {
+  cursor: pointer;
+}
+
+/* modal(login pop-up) ends */
+
+/* footer starts */
+main li{
+  list-style: none;
+}
+
+main li a{
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  font-size: 14px;
+  font-weight: 50;
+  letter-spacing: 1px;
+}
+main div h3{
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+main li a:hover{
+  text-decoration: underline;
+}
+/* footer ends */

@@ -1,0 +1,152 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz app</title>
+    <link rel="stylesheet" href="./style (2).css">
+    <!-- FontAweome CDN Link for Icons-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body style="content: '';
+position: fixed;
+width: 100vw;
+height: 100vh;
+ background-image: url(https://media.istockphoto.com/photos/thinking-child-boy-on-black-background-with-light-bulb-and-question-picture-id1252494221?s=612x612);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+-webkit-background-size: cover;
+background-size: cover;" >
+    <!-- <img style="height: 350px; width: 440px;margin-top: 150px; margin-left: 300px;" src="https://wallpapersafari.com/image/quiz-up-wallpaper.jpg"> -->
+       <!-- start Quiz button -->
+       <span class="team" ><h3>TEAM QUIZ</h3> </span>
+    <span class="start_btn"><button>Start</button></span>
+    <a href="./login (1).html" class="start_btn1"><button>Login</button></a>
+    <a href="./Register (1).html"class="start_btn1"><button>Register</button></a>
+    <!-- login -->
+    <!-- <div class="col-md-4 offset-4 mt-4 card login">
+        <div class="card-body">
+        <h1 class="h1 text-center text-success">Login</h1>
+        <form action = "#" method="POST" name = "myForm" onsubmit = "return(validate())">
+        
+        
+        <div class="form-group">
+        <tr>
+        <td align = "right">UserName</td>
+        <td><input type = "text" name = "Name" class="form-control" /></td>
+        </tr>
+        </div>
+        
+        <div class="form-group">
+        <tr>
+        <td align = "right">EMail</td>
+        <td><input type = "text" name = "EMail" class="form-control" /></td>
+        </tr>
+        </div>
+        
+        <div class="form-group">
+        <tr>
+        <td align = "right">Password</td>
+        <td><input type = "password" name = "Password" class="form-control" /></td>
+        </tr>
+        </div>
+       
+        <div class="form-group">
+        <tr>
+        <td align = "right"><a href="">Forget Password</a></td>
+        </tr>
+        </div>
+       
+        <div class="form-group">
+        <tr>
+        <td align = "right"></td>
+        <td><input type = "submit"  onclick="store()"value = "Submit" class="btn btn-outline-success btn-block"/></td>
+        </tr>
+        
+        </div>
+        
+        
+        </form> 
+        </div>
+       </div> -->
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>60 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title"><button style="width: 40px; height: 40px;" >1</button>
+                <button style="width: 60px;" onclick="" id="btn1" >2</button>
+                <button style="width: 60px;" >3</button>
+                <button style="width: 60px;">4</button>
+                <button style="width: 60px; ">5</button>
+                <button style="width: 60px; ">6</button>
+                <button style="width: 60px; ">7</button>
+                <button style="width: 60px; ">8</button>
+                <button style="width: 60px; ">9</button>
+                <button style="width: 60px; ">10</button>
+            </div>
+            
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">60</div>
+            </div>
+            <div class="time_"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay </button>
+            <button class="quit">Quit </button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="./qutions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="./script.js"></script>
+
+</body>
+</html>

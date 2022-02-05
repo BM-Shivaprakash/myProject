@@ -1,0 +1,351 @@
+:root {
+  --header-background: #000;
+  --airbnbBtn: #ff385c;
+  --header-color: #fff;
+  --logo-fill-color: #fff;
+  --base-color: #fff;
+  --icon-base-background: #fff;
+  --auth-menu-hover-background: rgba(255, 255, 255, 0.15);
+}
+
+#filterBlock {
+  background-color: var(--header-background);
+  height: 100px;
+}
+
+#filterBlock article {
+  width: 55%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+
+  /* color: rgb(8, 8, 8); */
+  background-color: #fff;
+  border-radius: 50px;
+  height: 70px;
+}
+
+#filterBlock article div label {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 15px 10px 0px 20px;
+  /* border-radius: 50px; */
+  border-right: 1px solid #ccc;
+  /* border-radius: 70px; */
+}
+.form-control:last-child {
+  border: none;
+}
+.form-control:hover {
+  background-color: #efefef;
+  border-radius: 50px;
+  border: none;
+}
+
+#filterBlock article div:nth-child(1) {
+  flex-basis: 35%;
+}
+
+#filterBlock article div:nth-child(2) {
+  flex-basis: 20%;
+}
+
+#filterBlock article div:nth-child(3) {
+  flex-basis: 20%;
+}
+
+.form-control article div:nth-child(4) {
+  flex-basis: 25%;
+}
+
+.form-control input {
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+
+.form-control :last-child {
+  border: none;
+}
+
+.form-control article div:nth-child(4) span:first-child {
+  flex-basis: 80%;
+}
+
+.form-control article div:nth-child(4) span:last-child {
+  flex-basis: 20%;
+}
+
+.form-control span {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 45px;
+}
+.form-control button {
+  /* position: absolute; */
+  /* bottom: -8px;
+    left: 100px; */
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: red;
+}
+
+.form-control button i {
+  color: white;
+}
+
+.form-control label {
+  line-height: 20px;
+  font-weight: 800;
+}
+
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
+.form-control span button:focus {
+  background-color: red;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+
+  transition: ease all 0.06s;
+}
+
+.form-control span button:focus::before {
+  content: "Search";
+  display: block;
+  color: #fff;
+}
+
+/* drop down in  nav starts */
+.dropDown {
+  position: absolute;
+  /* border: 2px solid rgb(185, 23, 23); */
+  height: 225px;
+  width: 225px;
+  background-color: #fff;
+  top: 65px;
+  left: 1025px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.dropDown ul {
+  list-style: none;
+}
+
+.dropDown ul li {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.dropDown ul li a {
+  text-decoration: none;
+  color: black;
+}
+/* drop down in nav ends */
+
+/* slider block */
+.imageFile img {
+  width: 100%;
+  height: 100%;
+}
+
+#sliderBlock {
+  position: relative;
+}
+.myBgPicContent {
+  position: absolute;
+  bottom: 100px;
+  left: 380px;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+
+.myBgPicContent button {
+  height: 50px;
+  width: 180px;
+  background-color: white;
+  color: purple;
+  border-radius: 25px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 33px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 37px;
+  margin-left: 75px;
+}
+/* maincard */
+#mainCard {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#myCards {
+  display: flex;
+  /* justify-content: space-evenly; */
+  position: relative;
+  width: 95%;
+  justify-content: space-around;
+}
+
+.cardImages1 {
+  background-color: maroon;
+  height: 180px;
+  width: 240px;
+  position: absolute;
+  top: 160px;
+  color: white;
+  padding-left: 20px;
+  line-height: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cardImages2 {
+  background-color: rgb(238, 23, 23);
+  height: 180px;
+  width: 240px;
+  position: absolute;
+  top: 160px;
+  color: white;
+  padding-left: 20px;
+  line-height: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cardImages3 {
+  background-color: rgb(216, 42, 42);
+  height: 180px;
+  width: 240px;
+  position: absolute;
+  top: 160px;
+  color: white;
+  padding-left: 20px;
+  line-height: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.cardImages4 {
+  background-color: orangered;
+  height: 180px;
+  width: 240px;
+  position: absolute;
+  top: 160px;
+  color: white;
+  padding-left: 20px;
+  line-height: 30px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.cardimgs img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cardimgs {
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+
+/* two cards */
+#my2Blocks{
+    width: 100%;
+    
+}
+#twoCards
+{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+}
+
+.twoCardsDiv
+{
+    position: relative;
+}
+.imgdiv
+{
+    position: absolute;
+    top: 20px;
+}
+
+.imgdiv h3
+{
+    color: #FFFFFF;
+    font-size: 41px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 46px;
+}
+
+.imgdiv button{
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    background-color: white;
+    
+}
+
+.imgdiv{
+    padding: 40px;
+}
+
+.twoCardsDiv img{
+    border-radius: 20px;
+}
+
+/* footer img */
+#footerImg
+{
+    position: relative;
+}
+
+#footerImg .footerImgContent
+{
+    position: absolute;
+    top: 20px;
+    padding: 90px;
+}
+
+.footerImgContent h3{
+    color: #FFFFFF;
+    font-size: 74px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 77px;
+}
+
+.footerImgContent button{
+    position: absolute;
+    top: 500px;
+    height: 50px;
+    width: 180px;
+    border-radius: 10px;
+    background-color: white;
+    border: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+

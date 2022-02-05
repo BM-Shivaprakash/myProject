@@ -1,0 +1,123 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:whitesmoke;
+    
+    
+}
+
+/* nav bar starts */
+#nav{
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 5px solid rgb(231, 172, 10);
+    
+}
+
+article{
+    height: 70px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    
+
+    
+}
+
+.logo{
+    /* background-color:black; */
+    opacity: 0.8;    
+    /* border: 10px solid rgba(231, 172, 10, 0.829); */
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 70px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+
+.authBlock a
+{
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+}
+.authBlock a:hover{
+    color: orange;
+}
+/* nav bar ends */
+
+
+#table{
+    background-color: orange;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color:white;
+    margin:  auto;
+    margin-top: 10px;
+    border-radius: 20px;
+  
+    
+}
+#table label{
+    font-weight: 600;
+    color: white;
+}
+
+#submit{
+    padding: 5px;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    font-weight: 300;
+    border:2px solid green;
+    text-decoration: none;
+}
+
+td{
+    color: black;
+    width: 200px;
+}
+
+input{
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: 2px aquamarine solid;
+    
+}
+
+select{
+    background-color: aquamarine;
+    width: 240px;
+    border-radius: 10px;
+    height: 40px;
+    font-weight: 600;
+}
+textarea{
+    background-color:aquamarine ;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
+}

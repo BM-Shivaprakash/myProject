@@ -1,0 +1,34 @@
+#modalSection article{
+    background-color: black;
+    position: relative;
+}
+
+.modalBlock{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 1px 1px 2px 0px #ccc;
+    border: 10px;
+    display: none;
+}
+
+.modalBlock span{
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.modalBlock span i{
+    color: red;
+}
+
+.modalBlock span:hover{
+    background-color: #efefef;
+    border-radius: 10px;
+}

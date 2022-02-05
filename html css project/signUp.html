@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp form</title>
+    <link rel="stylesheet" href="./signUp.css">
+    
+  
+</head>
+<body>
+     <!-- nav bar starts-->
+    <section id="nav">
+        <article>
+            <div class="logo">
+                <a href="https://www.testyantra.com/" > <strong style="color:white;">TES<span style="color: rgba(231, 172, 10, 0.993);">TY</span>ANTRA</strong> </a>
+            </div>
+            <div class="authBlock">
+                <a href="home.html">Home</a>
+                
+            </div>
+        </article>
+    </section>
+    <!-- nav bar ends -->
+    
+
+    <!-- table-form starts -->
+    <h2 style="text-align: center;font-style: italic;">Registration form</h2>
+    
+    <section id="table">
+        
+        <table>
+        
+        <form>
+            
+            <tr>
+                
+                <td>
+                    <label for="name">
+                        Name:
+                    </label>
+                </td>
+                <td><input type="text" id="name" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">
+                        Email:
+                    </label>
+                </td>
+                <td><input type="email" id="email" />
+                </td>
+            </tr>
+            <!-- password -->
+            <tr>
+                <td><label for="pwd">Password:</label></td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+                
+            </tr>
+            <tr>
+                <td><label for="cpwd">Confirm password:</label></td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+            <!-- radio -->
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+            <td>
+                <input type="Radio" name="Gender" value="Male" id="gender"> Male
+                <input type="Radio" name="Gender" value="Male" id="gender"> Female
+                <input type="Radio" name="Gender" value="Male" id="gender"> Others
+            </td>
+            </tr>
+            <!-- checkbox -->
+            <tr>
+                <td><label for="check">Courses:</label> </td>
+            <td>
+                <input type="checkbox" name="Technology stack" value="javascriptFS" id="check"/> Java full stack
+                <input type="checkbox" name="Technology stack" value="PythonFS" id="check"/> MERN full stack
+                <input type="checkbox" name="Technology stack" value="PythonFS" id="check"/> Python
+                <input type="checkbox" name="Technology stack" value="PythonFS" id="check"/> Testing
+                
+            </td>
+            </tr>
+            <!-- date -->
+            <tr>
+                <td><label for="date">Date of birth:</label></td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td><label for="telnum">
+                        Mobile No.:
+                    </label>
+                </td>
+                <td><input type="telnum" id="telnum" />
+                </td>
+            </tr>
+           
+            <!-- dropdown -->
+            <tr>
+                <td><label for="dropdown">Select Branch:</label></td>
+                <td>
+                <select name="COUNTRY" id="dropdown" >
+                    <option value="Select Branch">Select Branch</option>
+                    <option value="jsp">Jspiders</option>
+                    <option value="qsp">Qspiders</option>
+                    <option value="Pysp">Pyspiders</option>
+                </select>
+                </td>
+
+            </tr>
+            <!-- text area -->
+            <tr>
+                   <td><label for="address">Address: </label></td>
+                   <td><textarea name="Address" id="address" cols="30" rows="10"></textarea></td>
+            </tr>
+            <!-- button -->
+            <tr>
+                <td>
+                    <a href="home.html" id="submit">Submit</a>
+                </td>
+            </tr>
+           
+        </form>
+    </table>
+    
+    </section>
+    <!-- table-form ends -->
+   
+   
+    
+    
+
+</body>
+</html>
